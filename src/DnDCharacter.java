@@ -166,15 +166,16 @@ public class DnDCharacter {
     }
 
     public void getSpellSlots() {
-        System.out.println("\nLevel 1 spell slots: " + levelOneSpellSlots);
-        System.out.println("Level 2 spell slots: " + levelTwoSpellSlots);
-        System.out.println("Level 3 spell slots: " + levelThreeSpellSlots);
-        System.out.println("Level 4 spell slots: " + levelFourSpellSlots);
-        System.out.println("Level 5 spell slots: " + levelFiveSpellSlots);
-        System.out.println("Level 6 spell slots: " + levelSixSpellSlots);
-        System.out.println("Level 7 spell slots: " + levelSevenSpellSlots);
-        System.out.println("Level 8 spell slots: " + levelEightSpellSlots);
-        System.out.println("Level 9 spell slots: " + levelNineSpellSlots);
+
+        if (maxLevelOneSpellSlots != 0) {System.out.println("\nLevel 1 spell slots: " + levelOneSpellSlots);}
+        if (maxLevelTwoSpellSlots != 0) {System.out.println("Level 2 spell slots: " + levelTwoSpellSlots);}
+        if(maxLevelThreeSpellSlots != 0) {System.out.println("Level 3 spell slots: " + levelThreeSpellSlots);}
+        if(maxLevelFourSpellSlots != 0)  {System.out.println("Level 4 spell slots: " + levelFourSpellSlots);}
+        if(maxLevelFiveSpellSlots != 0) {System.out.println("Level 5 spell slots: " + levelFiveSpellSlots);}
+        if(maxLevelSixSpellSlots != 0) {System.out.println("Level 6 spell slots: " + levelSixSpellSlots);}
+        if(maxLevelSevenSpellSlots != 0) {System.out.println("Level 7 spell slots: " + levelSevenSpellSlots);}
+        if(maxLevelEightSpellSlots != 0) {System.out.println("Level 8 spell slots: " + levelEightSpellSlots);}
+        if(maxLevelNineSpellSlots != 0) {System.out.println("Level 9 spell slots: " + levelNineSpellSlots);}
     }
     public void getInfo() {
 
