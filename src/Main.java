@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        DnDCharacter ecstasy = new DnDCharacter(73, 10, 4, 5, 4, 4, 2);
+        DnDCharacter ecstasy = new DnDCharacter(73, 10, 4, 5, 4, 4, 2,0,0,0,0);
 
         ecstasy.setHealth(143);
         ecstasy.setSpellSlot(3,2);

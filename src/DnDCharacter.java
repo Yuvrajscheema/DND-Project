@@ -3,11 +3,11 @@ public class DnDCharacter {
 
     private int health;
     private final int maxHealth;
-    private int levelOneSpellSlots, levelTwoSpellSlots,levelThreeSpellSlots, levelFourSpellSlots, levelFiveSpellSlots, levelSixSpellSlots, levelSevenSpellSlots, levelEightSpellSlots, levelNineSpellSlotsTen;
-    private final int maxLevelOneSpellSlots, maxLevelTwoSpellSlots,maxLevelThreeSpellSlots, maxLevelFourSpellSlots, maxLevelFiveSpellSlots;
+    private int levelOneSpellSlots, levelTwoSpellSlots,levelThreeSpellSlots, levelFourSpellSlots, levelFiveSpellSlots, levelSixSpellSlots, levelSevenSpellSlots, levelEightSpellSlots, levelNineSpellSlots;
+    private final int maxLevelOneSpellSlots, maxLevelTwoSpellSlots,maxLevelThreeSpellSlots, maxLevelFourSpellSlots, maxLevelFiveSpellSlots, maxLevelSixSpellSlots, maxLevelSevenSpellSlots, maxLevelEightSpellSlots, maxLevelNineSpellSlots;
     private int sorceryPoints;
     private final int maxSorceryPoints;
-    DnDCharacter(int m_health, int m_SorceryPoints, int m_levelOneSpellSlots, int m_levelTwoSpellSlots, int m_levelThreeSpellSlots, int m_levelFourSpellSlots, int m_levelFiveSpellSlots) {
+    DnDCharacter(int m_health, int m_SorceryPoints, int m_levelOneSpellSlots, int m_levelTwoSpellSlots, int m_levelThreeSpellSlots, int m_levelFourSpellSlots, int m_levelFiveSpellSlots, int m_levelSixSpellSlots, int m_levelSevenSpellSlots, int m_levelEightSpellSlots, int m_levelNineSpellSlots) {
         this.maxHealth = m_health;
         this.health = this.maxHealth;
 
@@ -28,6 +28,19 @@ public class DnDCharacter {
 
         this.maxLevelFiveSpellSlots = m_levelFiveSpellSlots;
         this.levelFiveSpellSlots = m_levelFiveSpellSlots;
+
+        this.maxLevelSixSpellSlots = m_levelSixSpellSlots;
+        this.levelSixSpellSlots = m_levelSixSpellSlots;
+
+        this.maxLevelSevenSpellSlots = m_levelEightSpellSlots;
+        this.levelSevenSpellSlots = m_levelSevenSpellSlots;
+
+        this.maxLevelEightSpellSlots = m_levelEightSpellSlots;
+        this.levelEightSpellSlots = m_levelEightSpellSlots;
+
+        this.maxLevelNineSpellSlots = m_levelNineSpellSlots;
+        this.levelNineSpellSlots = m_levelNineSpellSlots;
+
     }
 
     public void longRest() {
@@ -39,6 +52,10 @@ public class DnDCharacter {
         levelThreeSpellSlots = maxLevelThreeSpellSlots;
         levelFourSpellSlots = maxLevelFourSpellSlots;
         levelFiveSpellSlots = maxLevelFiveSpellSlots;
+        levelSixSpellSlots = maxLevelSixSpellSlots;
+        levelSevenSpellSlots = maxLevelSevenSpellSlots;
+        levelEightSpellSlots = maxLevelEightSpellSlots;
+        levelNineSpellSlots = maxLevelNineSpellSlots;
 
     }
 
@@ -96,6 +113,23 @@ public class DnDCharacter {
                 levelFiveSpellSlots -= number;
                 System.out.println("Used level 5 spell slot");
             }
+            case 6 -> {
+                levelSixSpellSlots -= number;
+                System.out.println("Used level 6 spell slot");
+            }
+            case 7 -> {
+                levelSevenSpellSlots -= number;
+                System.out.println("Used level 7 spell slot");
+            }
+            case 8 -> {
+                levelEightSpellSlots -= number;
+                System.out.println("Used level 8 spell slot");
+            }
+            case 9 -> {
+                levelNineSpellSlots -= number;
+                System.out.println("Used level 9 spell slot");
+            }
+
         }
     }
 
@@ -116,6 +150,18 @@ public class DnDCharacter {
             case 5 -> {
                 levelFiveSpellSlots = number;
             }
+            case 6 -> {
+                levelSixSpellSlots = number;
+            }
+            case 7 -> {
+                levelSevenSpellSlots = number;
+            }
+            case 8 -> {
+                levelEightSpellSlots = number;
+            }
+            case 9 -> {
+                levelNineSpellSlots = number;
+            }
         }
     }
 
@@ -125,6 +171,10 @@ public class DnDCharacter {
         System.out.println("Level 3 spell slots: " + levelThreeSpellSlots);
         System.out.println("Level 4 spell slots: " + levelFourSpellSlots);
         System.out.println("Level 5 spell slots: " + levelFiveSpellSlots);
+        System.out.println("Level 6 spell slots: " + levelSixSpellSlots);
+        System.out.println("Level 7 spell slots: " + levelSevenSpellSlots);
+        System.out.println("Level 8 spell slots: " + levelEightSpellSlots);
+        System.out.println("Level 9 spell slots: " + levelNineSpellSlots);
     }
     public void getInfo() {
 
