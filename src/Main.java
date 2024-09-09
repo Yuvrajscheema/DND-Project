@@ -13,7 +13,7 @@ public class Main {
         ecstasy.setSpellSlot(5,1);
         ecstasy.setSorceryPoints(5);
 
-        String input = null;
+        String input = "";
 
 
         while(!Objects.equals(input, "end")) {
