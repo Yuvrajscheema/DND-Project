@@ -7,6 +7,7 @@ public class DnDSorcerer implements DnDCharacter{
     private final int maxLevelOneSpellSlots, maxLevelTwoSpellSlots,maxLevelThreeSpellSlots, maxLevelFourSpellSlots, maxLevelFiveSpellSlots, maxLevelSixSpellSlots, maxLevelSevenSpellSlots, maxLevelEightSpellSlots, maxLevelNineSpellSlots;
     private int sorceryPoints;
     private final int maxSorceryPoints;
+
     DnDSorcerer(int m_health, int m_SorceryPoints, int m_levelOneSpellSlots, int m_levelTwoSpellSlots, int m_levelThreeSpellSlots, int m_levelFourSpellSlots, int m_levelFiveSpellSlots, int m_levelSixSpellSlots, int m_levelSevenSpellSlots, int m_levelEightSpellSlots, int m_levelNineSpellSlots) {
         this.maxHealth = m_health;
         this.health = this.maxHealth;
@@ -43,6 +44,7 @@ public class DnDSorcerer implements DnDCharacter{
 
     }
 
+    @Override
     public void longRest() {
 
         health = maxHealth;
@@ -59,38 +61,48 @@ public class DnDSorcerer implements DnDCharacter{
 
     }
 
+    @Override
     public void shortRest() {
         health = maxHealth;
     }
 
+    @Override
     public void reduceHealth(int healthLoss) {
         this.health -= healthLoss;
     }
 
+    @Override
     public void addHealth(int healthGain) {
         this.health += healthGain;
     }
+
+    @Override
     public void setHealth(int m_health) {
         this.health = m_health;
     }
 
+    @Override
     public void getHealth() {
         System.out.println("\nCurrent Health: " + health);
     }
 
+    @Override
     public void useSorceryPoints(int number) {
         this.sorceryPoints -= number;
     }
 
+    @Override
     public void setSorceryPoints(int number) {
         this.sorceryPoints = number;
     }
 
+    @Override
     public void getSorceryPoints() {
         System.out.println("\nCurrent Sorcery Points: " + sorceryPoints);
     }
 
 
+    @Override
     public void useSpellSlot(int level, int number) {
         switch (level) {
             case 1 -> {
@@ -133,6 +145,7 @@ public class DnDSorcerer implements DnDCharacter{
         }
     }
 
+    @Override
     public void setSpellSlot(int level, int number) {
         switch (level) {
             case 1 -> {
@@ -165,6 +178,7 @@ public class DnDSorcerer implements DnDCharacter{
         }
     }
 
+    @Override
     public void getSpellSlots() {
 
         if (maxLevelOneSpellSlots != 0) {System.out.println("\nLevel 1 spell slots: " + levelOneSpellSlots);}
@@ -177,6 +191,8 @@ public class DnDSorcerer implements DnDCharacter{
         if(maxLevelEightSpellSlots != 0) {System.out.println("Level 8 spell slots: " + levelEightSpellSlots);}
         if(maxLevelNineSpellSlots != 0) {System.out.println("Level 9 spell slots: " + levelNineSpellSlots);}
     }
+
+    @Override
     public void getInfo() {
 
         getHealth();
