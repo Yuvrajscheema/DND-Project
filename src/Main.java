@@ -8,7 +8,7 @@ public class Main {
 
         DnDSorcerer ecstasy = new DnDSorcerer(73, 10, 4, 5, 4, 4, 2,0,0,0,0);
 
-        ecstasy.setHealth(143);
+        ecstasy.setHealth(139);
         ecstasy.setSpellSlot(3,2);
         ecstasy.setSpellSlot(5,1);
         ecstasy.setSorceryPoints(5);

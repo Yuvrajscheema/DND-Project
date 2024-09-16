@@ -107,42 +107,35 @@ public class DnDSorcerer implements DnDCharacter{
         switch (level) {
             case 1 -> {
             levelOneSpellSlots -= number;
-            System.out.println("Used level 1 spell slot");
             }
             case 2 -> {
                 levelTwoSpellSlots -= number;
-                System.out.println("Used level 2 spell slot");
             }
             case 3 -> {
                 levelThreeSpellSlots -= number;
-                System.out.println("Used level 3 spell slot");
             }
             case 4 -> {
                 levelFourSpellSlots -= number;
-                System.out.println("Used level 4 spell slot");
             }
             case 5 -> {
                 levelFiveSpellSlots -= number;
-                System.out.println("Used level 5 spell slot");
             }
             case 6 -> {
                 levelSixSpellSlots -= number;
-                System.out.println("Used level 6 spell slot");
             }
             case 7 -> {
                 levelSevenSpellSlots -= number;
-                System.out.println("Used level 7 spell slot");
             }
             case 8 -> {
                 levelEightSpellSlots -= number;
-                System.out.println("Used level 8 spell slot");
             }
             case 9 -> {
                 levelNineSpellSlots -= number;
-                System.out.println("Used level 9 spell slot");
             }
 
         }
+
+        System.out.println("Used " + number + " level " + level + " spell slot");
     }
 
     @Override
