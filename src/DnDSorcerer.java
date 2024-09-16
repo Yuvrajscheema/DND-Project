@@ -124,33 +124,15 @@ public class DnDSorcerer implements DnDCharacter{
     @Override
     public void setSpellSlot(int level, int number) {
         switch (level) {
-            case 1 -> {
-                levelOneSpellSlots = number;
-            }
-            case 2 -> {
-                levelTwoSpellSlots = number;
-            }
-            case 3 -> {
-                levelThreeSpellSlots = number;
-            }
-            case 4 -> {
-                levelFourSpellSlots = number;
-            }
-            case 5 -> {
-                levelFiveSpellSlots = number;
-            }
-            case 6 -> {
-                levelSixSpellSlots = number;
-            }
-            case 7 -> {
-                levelSevenSpellSlots = number;
-            }
-            case 8 -> {
-                levelEightSpellSlots = number;
-            }
-            case 9 -> {
-                levelNineSpellSlots = number;
-            }
+            case 1 -> {levelOneSpellSlots = number;}
+            case 2 -> {levelTwoSpellSlots = number;}
+            case 3 -> {levelThreeSpellSlots = number;}
+            case 4 -> {levelFourSpellSlots = number;}
+            case 5 -> {levelFiveSpellSlots = number;}
+            case 6 -> {levelSixSpellSlots = number;}
+            case 7 -> {levelSevenSpellSlots = number;}
+            case 8 -> {levelEightSpellSlots = number;}
+            case 9 -> {levelNineSpellSlots = number;}
         }
     }
 
